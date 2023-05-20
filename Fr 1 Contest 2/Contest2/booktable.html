@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+  <h1 class="heading"><b><u>Library System</u><b></h1>
+  </div>
+  
+<!--<nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="#books-section">Books</a></li>
+      <li><a href="#registration-section">Register</a></li>
+    </ul>
+  </nav>-->
+
+  <div id="navbar">
+    <a class="active" href="#book-section">Book</a>
+   
+    <a href="#registration-section">Register</a>
+  </div>
+  
+<table>
+  <section id="books-section">
+    <h2>Books Section</h2>
+   
+ <!-- Add content for the books section -->
+ 
+  <thead>
+    <tr>
+      <th>Book ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>
+       <!-- <span class="book-title">Book Title 1</span> -->
+       <a href="#Book_Title_1" class="book-title">Book Title 1</a>
+        <table class="nested-table">
+          <tr>
+            <td>Publication Date:</td>
+            <td>2021-01-01</td>
+          </tr>
+          <tr>
+            <td>Page Count:</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>ISBN:</td>
+            <td>978-1234567890</td>
+          </tr>
+        </table>
+      </td>
+      <td>Author 1</td>
+      <td>Genre 1</td>
+      <td>Available</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>
+        <!-- <span class="book-title">Book Title 2</span> -->
+        <a href="#Book_Title_2" class="book-title">Book Title 2</a>
+        <table class="nested-table">
+          <tr>
+            <td>Publication Date:</td>
+            <td>2021-02-01</td>
+          </tr>
+          <tr>
+            <td>Page Count:</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>ISBN:</td>
+            <td>978-0987654321</td>
+          </tr>
+        </table>
+      </td>
+      <td>Author 2</td>
+      <td>Genre 2</td>
+      <td>Unavailable</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <!--<span class="book-title">Book Title 3</span> -->
+        <a href="#Book_Title_3" class="book-title">Book Title 3</a>
+        <table class="nested-table">
+          <tr>
+            <td>Publication Date:</td>
+            <td>2021-03-01</td>
+          </tr>
+          <tr>
+            <td>Page Count:</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>ISBN:</td>
+            <td>978-9876543210</td>
+          </tr>
+        </table>
+      </td>
+      <td>Author 3</td>
+      <td>Genre 3</td>
+      <td>Available</td>
+    </tr>
+</tbody>
+</section>
+</table>
+<hr>
+  <section id="registration-section">
+
+    <h2>Registration Section</h2>
+    <!-- Add content for the registration section -->
+    
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="date-of-birth">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="5" max="100" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+     
+      <button type="submit" id="submit">submit</button>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
